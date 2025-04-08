@@ -13,11 +13,13 @@ class Line {
         return Math.sqrt(Math.pow((end.x - start.x), 2) + Math.pow((end.y - start.y), 2));
     }
 
-    // equals method to check equality of two lines based on their length
+    // Equals method to check equality of two lines based on their length
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
         Line line = (Line) obj;
         return Double.compare(this.calculateLength(), line.calculateLength()) == 0;
     }

@@ -46,7 +46,7 @@ public class LineComparisionComputation {
         } else
             System.out.println("Not equal");
 
-        // Using Java compareTo method to compare 2 Lengths ispreferable.
+        // Using Java compareTo method to compare 2 Lengths ispreferable
         int comparisonResult = lengthOfaLine1.compareTo(lengthOfaLine2);
         System.out.println(comparisonResult);
         if (comparisonResult == 0) {
