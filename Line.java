@@ -2,7 +2,7 @@ class Line {
     Point start;
     Point end;
 
-    // Constructor
+    // Constructor to inilialize
     Line(Point start, Point end) {
         this.start = start;
         this.end = end;

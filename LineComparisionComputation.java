@@ -40,7 +40,7 @@ public class LineComparisionComputation {
         Double lengthOfaLine2 = line2.calculateLength();
         System.out.println("The length of a line 1 : " + lengthOfaLine1);
         System.out.println("The length of line 2 : " + lengthOfaLine2);
-        // compare the two lengths using the equals method
+        // compare the two length using the equals method
         if (lengthOfaLine1.equals(lengthOfaLine2)) {
             System.out.println("The given to lengths are equal");
         } else
