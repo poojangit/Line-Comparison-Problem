@@ -26,9 +26,18 @@ public class LineComparisionComputation {
         System.out.println("Enter b2 coordinate: ");
         int b2 = sc.nextInt();
 
+        // Creating Points and Lines
+        Point startPointLine1 = new Point(x1, y1);
+        Point endPointLine1 = new Point(x2, y2);
+        Line line1 = new Line(startPointLine1, endPointLine1);
+
+        Point startPointLine2 = new Point(a1, b1);
+        Point endPointLine2 = new Point(a2, b2);
+        Line line2 = new Line(startPointLine2, endPointLine2);
+
         // calculating the lengths
-        Double lengthOfaLine1 = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
-        Double lengthOfaLine2 = Math.sqrt(Math.pow((a2 - a1), 2) + Math.pow((b2 - b1), 2));
+        Double lengthOfaLine1 = line1.calculateLength();
+        Double lengthOfaLine2 = line2.calculateLength();
         System.out.println("The length of a line 1 : " + lengthOfaLine1);
         System.out.println("The length of line 2 : " + lengthOfaLine2);
         // compare the two lengths using the equals method
